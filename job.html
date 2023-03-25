@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Job portal</title>
+
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">Home</a>
+        <a href="#">Job</a>
+    </header>
+    <main>
+        <section class="job-details">
+            <h2 class="job-title">Job Title</h2>
+            <p class="job-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam corporis maxime accusamus. 
+                Adipisci ipsum iste vero illo impedit! Labore iste eos beatae natus soluta asperiores autem, 
+                facere necessitatibus quia dolorem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam corporis maxime accusamus. 
+                Adipisci ipsum iste vero illo impedit! Labore iste eos beatae natus soluta asperiores autem, 
+                facere necessitatibus quia dolorem!
+                <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam corporis maxime accusamus. 
+                Adipisci ipsum iste vero illo impedit! Labore iste eos beatae natus soluta asperiores autem, 
+                facere necessitatibus quia dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam corporis maxime accusamus. 
+                Adipisci ipsum iste vero illo impedit! Labore iste eos beatae natus soluta asperiores autem, 
+                facere necessitatibus quia dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam corporis maxime accusamus. 
+                Adipisci ipsum iste vero illo impedit! Labore iste eos beatae natus soluta asperiores autem, 
+                facere necessitatibus quia dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam corporis maxime accusamus. 
+                Adipisci ipsum iste vero illo impedit! Labore iste eos beatae natus soluta asperiores autem, 
+                facere necessitatibus quia dolorem!
+                <br><br>
+            </p>
+
+            <p class="skills">Skills: Lorem ipsum, dolor, sit, amet consectetur.</p>
+            
+            <p class="location">location: India, Mumbai</p>
+            <p class="department">Department: DevOps</p>
+
+            <button id="apply-btn">Apply</button>
+        </section>
+
+        <div class="form-container hide">
+            <div class="form-inner-container">
+                <h1>Job Application Form</h1>
+                <button id="close-btn">Close</button>
+                <form id="application-form">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" required pattern="[a-zA-Z ]+" title="Please enter a valid name (letters and spaces only)."><br>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required><br>
+                    
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone" required pattern="[0-9]{10}" title="Please enter a valid phone number (10 digits only)."><br>
+                    
+                    <label for="resume">Resume:</label>
+                    <input type="file" name="resume" id="resume" accept=".pdf,.doc,.docx" required><br>
+                    
+                    <label for="cover-letter">Cover Letter:</label><br>
+                    <textarea name="cover-letter" id="cover-letter" rows="5" required></textarea><br>
+                    
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="./script/main.js"></script>
+</body>
+</html>
